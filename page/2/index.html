@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/ruleengine-data.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/ruleengine-data.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
+  <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.js"></script>
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"ringforyou.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true}};
+  </script>
+<meta name="description" content="糊糊涂涂又一天">
+<meta property="og:type" content="website">
+<meta property="og:title" content="大糊涂">
+<meta property="og:url" content="https://ringforyou.github.io/page/2/index.html">
+<meta property="og:site_name" content="大糊涂">
+<meta property="og:description" content="糊糊涂涂又一天">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="糊涂">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://ringforyou.github.io/page/2/">
+
+
+<script data-pjax class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+<title>大糊涂</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <main class="main">
+    <div class="headband"></div>
+	<a target="_blank" rel="noopener" href="https://anlege.gitee.io" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">大糊涂</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">记录生活中的点点滴滴</p>
+      <img class="custom-logo-image" src="/uploads/custom-logo.jpg" alt="大糊涂">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="糊涂"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">糊涂</p>
+  <div class="site-description" itemprop="description">糊糊涂涂又一天</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/RingForYou" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;RingForYou" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:1435803646@qq.com" title="E-Mail → mailto:1435803646@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/6386087444" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;6386087444" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.anlege.cn/" title="Google → https:&#x2F;&#x2F;www.anlege.cn" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i></a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://ringforyou.github.io/2021/03/15/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%89%B9%E9%87%8F%E6%9B%BF%E6%8D%A2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="糊涂">
+      <meta itemprop="description" content="糊糊涂涂又一天">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大糊涂">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/03/15/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%89%B9%E9%87%8F%E6%9B%BF%E6%8D%A2/" class="post-title-link" itemprop="url">数据库批量替换</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-15 19:00:41" itemprop="dateCreated datePublished" datetime="2021-03-15T19:00:41+08:00">2021-03-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-03-19 16:11:59" itemprop="dateModified" datetime="2021-03-19T16:11:59+08:00">2021-03-19</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">数据库相关</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">update license_plate set number_plate = REPLACE(number_plate,&#x27;-&#x27;,&#x27;&#x27;);</span><br><span class="line"></span><br><span class="line">license_plate （表名）</span><br><span class="line">number_plate  (字段名)</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">例子：</span><br><span class="line">update production_order set source_id=replace(source_id,&#x27;S0&#x27;,&#x27;SO&#x27;) WHERE source_id LIKE &quot;%S0%&quot; and weight = 0</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://ringforyou.github.io/2021/03/15/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E9%80%97%E5%8F%B7%E9%9A%94%E5%BC%80%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%A5%E5%8F%8A%E5%8C%B9%E9%85%8D%E6%95%B0%E6%8D%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="糊涂">
+      <meta itemprop="description" content="糊糊涂涂又一天">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大糊涂">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/03/15/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%9F%A5%E8%AF%A2%E9%80%97%E5%8F%B7%E9%9A%94%E5%BC%80%E7%9A%84%E6%95%B0%E6%8D%AE%E4%BB%A5%E5%8F%8A%E5%8C%B9%E9%85%8D%E6%95%B0%E6%8D%AE/" class="post-title-link" itemprop="url">数据库查询逗号隔开的数据以及匹配数据</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-15 19:00:41" itemprop="dateCreated datePublished" datetime="2021-03-15T19:00:41+08:00">2021-03-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-03-19 16:15:37" itemprop="dateModified" datetime="2021-03-19T16:15:37+08:00">2021-03-19</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">数据库相关</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>（查询某个数据是否在该字段中）</p>
+<p>SELECT * from title WHERE FIND_IN_SET((SELECT id from label WHERE name = “G330”),label_list)</p>
+<p>紫色是方法，红色是查询出来的id（也可以直接是字符串），蓝色是字段</p>
+<p>（逗号分隔的字段中的数据，匹配另一张表中的数据）</p>
+<p>select t.id,t.title, GROUP_CONCAT(l.name) as label from title t</p>
+<p>inner join label l </p>
+<p>on FIND_IN_SET(l.id,t.label_list)</p>
+<p>group by t.id;</p>
+<p>红色表示要展示的那个字段的数据 , 蓝色表示查询某个数据在该字段中</p>
+<p>（通过分组去重）</p>
+<p>SELECT * FROM title GROUP BY label_list</p>
+<p>红色表示要去重的字段</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://ringforyou.github.io/2021/03/15/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%8C%E8%BD%AC%E5%88%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="糊涂">
+      <meta itemprop="description" content="糊糊涂涂又一天">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大糊涂">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/03/15/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%8C%E8%BD%AC%E5%88%97/" class="post-title-link" itemprop="url">数据库行转列</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-03-15 19:00:41" itemprop="dateCreated datePublished" datetime="2021-03-15T19:00:41+08:00">2021-03-15</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-03-19 16:13:21" itemprop="dateModified" datetime="2021-03-19T16:13:21+08:00">2021-03-19</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/" itemprop="url" rel="index"><span itemprop="name">数据库相关</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="1-行转列"><a href="#1-行转列" class="headerlink" title="1.行转列"></a>1.行转列</h2><h3 id="建表"><a href="#建表" class="headerlink" title="建表"></a>建表</h3><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE IF EXISTS tb_score;</span><br><span class="line"></span><br><span class="line">CREATE TABLE tb_score(</span><br><span class="line">    id INT(<span class="number">11</span>) NOT NULL auto_increment,</span><br><span class="line">    userid VARCHAR(<span class="number">20</span>) NOT NULL COMMENT <span class="string">&#x27;用户id&#x27;</span>,</span><br><span class="line">    subject VARCHAR(<span class="number">20</span>) COMMENT <span class="string">&#x27;科目&#x27;</span>,</span><br><span class="line">    score DOUBLE COMMENT <span class="string">&#x27;成绩&#x27;</span>,</span><br><span class="line">    PRIMARY KEY(id)</span><br><span class="line">)ENGINE = INNODB DEFAULT CHARSET = utf8;</span><br><span class="line"></span><br><span class="line">插入数据</span><br><span class="line">INSERT INTO tb_score(userid,subject,score) VALUES (<span class="string">&#x27;001&#x27;</span>,<span class="string">&#x27;语文&#x27;</span>,<span class="number">90</span>);</span><br><span class="line">INSERT INTO tb_score(userid,subject,score) VALUES (<span class="string">&#x27;001&#x27;</span>,<span class="string">&#x27;数学&#x27;</span>,<span class="number">92</span>);</span><br><span class="line">INSERT INTO tb_score(userid,subject,score) VALUES (<span class="string">&#x27;001&#x27;</span>,<span class="string">&#x27;英语&#x27;</span>,<span class="number">80</span>);</span><br><span class="line">INSERT INTO tb_score(userid,subject,score) VALUES (<span class="string">&#x27;002&#x27;</span>,<span class="string">&#x27;语文&#x27;</span>,<span class="number">88</span>);</span><br><span class="line">INSERT INTO tb_score(userid,subject,score) VALUES (<span class="string">&#x27;002&#x27;</span>,<span class="string">&#x27;数学&#x27;</span>,<span class="number">90</span>);</span><br><span class="line">INSERT INTO tb_score(userid,subject,score) VALUES (<span class="string">&#x27;002&#x27;</span>,<span class="string">&#x27;英语&#x27;</span>,<span class="number">75.5</span>);</span><br><span class="line">INSERT INTO tb_score(userid,subject,score) VALUES (<span class="string">&#x27;003&#x27;</span>,<span class="string">&#x27;语文&#x27;</span>,<span class="number">70</span>);</span><br><span class="line">INSERT INTO tb_score(userid,subject,score) VALUES (<span class="string">&#x27;003&#x27;</span>,<span class="string">&#x27;数学&#x27;</span>,<span class="number">85</span>);</span><br><span class="line">INSERT INTO tb_score(userid,subject,score) VALUES (<span class="string">&#x27;003&#x27;</span>,<span class="string">&#x27;英语&#x27;</span>,<span class="number">90</span>);</span><br><span class="line">INSERT INTO tb_score(userid,subject,score) VALUES (<span class="string">&#x27;003&#x27;</span>,<span class="string">&#x27;政治&#x27;</span>,<span class="number">82</span>);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tcs-devops.aliyuncs.com/storage/11230462e5f064f4b64e35786299c05a55ec?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9hcHBJZCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYxNjc0NjM3MCwiaWF0IjoxNjE2MTQxNTcwLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMjMwNDYyZTVmMDY0ZjRiNjRlMzU3ODYyOTljMDVhNTVlYyJ9.pn8n6GdSZ4uhP5pLOPwi0T1CJEMiMQiDn8fE_CUOdoc&download=image.png"></p>
+<p>先来看一下转换后的结果：</p>
+<p><img src="https://tcs-devops.aliyuncs.com/storage/11234805c09b4549850b029de59548ec6372?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9hcHBJZCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYxNjc0NjM3MCwiaWF0IjoxNjE2MTQxNTcwLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMjM0ODA1YzA5YjQ1NDk4NTBiMDI5ZGU1OTU0OGVjNjM3MiJ9.YO3UcDTSvkvLmpMSPRL16UeviKAnezZ6fixhuqBSgtM&download=image.png"></p>
+<p>第一种（if）</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">SELECT userid,</span><br><span class="line">SUM(IF(`subject`=&#x27;语文&#x27;,score,0)) as &#x27;语文&#x27;,</span><br><span class="line">SUM(IF(`subject`=&#x27;数学&#x27;,score,0)) as &#x27;数学&#x27;,</span><br><span class="line">SUM(IF(`subject`=&#x27;英语&#x27;,score,0)) as &#x27;英语&#x27;,</span><br><span class="line">SUM(IF(`subject`=&#x27;政治&#x27;,score,0)) as &#x27;政治&#x27; </span><br><span class="line">FROM tb_score </span><br><span class="line">GROUP BY userid</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>注意点：</p>
+<p>（1）SUM() 是为了能够使用GROUP BY根据userid进行分组，因为每一个userid对应的subject=”语文”的记录只有一条，所以SUM() 的值就等于对应那一条记录的score的值。</p>
+<p>假如userid =’001’ and subject=’语文’ 的记录有两条，则此时SUM() 的值将会是这两条记录的和，同理，使用Max()的值将会是这两条记录里面值最大的一个。但是正常情况下，一个user对应一个subject只有一个分数，因此可以使用SUM()、MAX()、MIN()、AVG()等聚合函数都可以达到行转列的效果。</p>
+<p>（2）IF(<code>subject</code>=’语文’,score,0) 作为条件，即对所有subject=’语文’的记录的score字段进行SUM()、MAX()、MIN()、AVG()操作，如果score没有值则默认为0。</p>
+<p>第二种（case when then else end）</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">SELECT userid,</span><br><span class="line">SUM(CASE `subject` WHEN &#x27;语文&#x27; THEN score ELSE 0 END) as &#x27;语文&#x27;,</span><br><span class="line">SUM(CASE `subject` WHEN &#x27;数学&#x27; THEN score ELSE 0 END) as &#x27;数学&#x27;,</span><br><span class="line">SUM(CASE `subject` WHEN &#x27;英语&#x27; THEN score ELSE 0 END) as &#x27;英语&#x27;,</span><br><span class="line">SUM(CASE `subject` WHEN &#x27;政治&#x27; THEN score ELSE 0 END) as &#x27;政治&#x27; </span><br><span class="line">FROM tb_score </span><br><span class="line">GROUP BY userid</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tcs-devops.aliyuncs.com/storage/11230f39dbc95dc4757c5fbdc48d89edbe45?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9hcHBJZCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYxNjc0NjM3MCwiaWF0IjoxNjE2MTQxNTcwLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMjMwZjM5ZGJjOTVkYzQ3NTdjNWZiZGM0OGQ4OWVkYmU0NSJ9.-Qrj4eZKJctRfyJ-QUiY80qBLBViMXeNcTmo9QMNKHI&download=image.png"></p>
+<p><strong>3、利用SUM(IF()) 生成列 + WITH ROLLUP 生成汇总行,并利用 IFNULL将汇总行标题显示为Total</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">SELECT IFNULL(userid,&#39;total&#39;) AS userid,</span><br><span class="line">SUM(IF(&#96;subject&#96;&#x3D;&#39;语文&#39;,score,0)) AS 语文,</span><br><span class="line">SUM(IF(&#96;subject&#96;&#x3D;&#39;数学&#39;,score,0)) AS 数学,</span><br><span class="line">SUM(IF(&#96;subject&#96;&#x3D;&#39;英语&#39;,score,0)) AS 英语,</span><br><span class="line">SUM(IF(&#96;subject&#96;&#x3D;&#39;政治&#39;,score,0)) AS 政治,</span><br><span class="line">SUM(IF(&#96;subject&#96;&#x3D;&#39;total&#39;,score,0)) AS total</span><br><span class="line">FROM(</span><br><span class="line">    SELECT userid,IFNULL(&#96;subject&#96;,&#39;total&#39;) AS &#96;subject&#96;,SUM(score) AS score</span><br><span class="line">    FROM tb_score</span><br><span class="line">    GROUP BY userid,&#96;subject&#96;</span><br><span class="line">    WITH ROLLUP</span><br><span class="line">    HAVING userid IS NOT NULL</span><br><span class="line">)AS A </span><br><span class="line">GROUP BY userid</span><br><span class="line">WITH ROLLUP;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tcs-devops.aliyuncs.com/storage/1123635edd46ca57a0b1899fc51eca52e88d?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9hcHBJZCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYxNjc0NjM3MCwiaWF0IjoxNjE2MTQxNTcwLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMjM2MzVlZGQ0NmNhNTdhMGIxODk5ZmM1MWVjYTUyZTg4ZCJ9.HN3pWVyRy509IuLDFPQFGGH1saTEpRjrBO-81OOjmB4&download=image.png"></p>
+<p><strong>4、利用SUM(IF()) 生成列 + UNION 生成汇总行,并利用 IFNULL将汇总行标题显示为 Total</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">SELECT userid,</span><br><span class="line">SUM(IF(`subject`=&#x27;语文&#x27;,score,0)) AS 语文,</span><br><span class="line">SUM(IF(`subject`=&#x27;数学&#x27;,score,0)) AS 数学,</span><br><span class="line">SUM(IF(`subject`=&#x27;英语&#x27;,score,0)) AS 英语,</span><br><span class="line">SUM(IF(`subject`=&#x27;政治&#x27;,score,0)) AS 政治,</span><br><span class="line">SUM(score) AS TOTAL </span><br><span class="line">FROM tb_score</span><br><span class="line">GROUP BY userid</span><br><span class="line">UNION</span><br><span class="line">SELECT &#x27;TOTAL&#x27;,SUM(IF(`subject`=&#x27;语文&#x27;,score,0)) AS 语文,</span><br><span class="line">SUM(IF(`subject`=&#x27;数学&#x27;,score,0)) AS 数学,</span><br><span class="line">SUM(IF(`subject`=&#x27;英语&#x27;,score,0)) AS 英语,</span><br><span class="line">SUM(IF(`subject`=&#x27;政治&#x27;,score,0)) AS 政治,</span><br><span class="line">SUM(score) FROM tb_score</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tcs-devops.aliyuncs.com/storage/1123df96762cd196e0ce18ebfa98e519811f?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9hcHBJZCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYxNjc0NjM3MCwiaWF0IjoxNjE2MTQxNTcwLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMjNkZjk2NzYyY2QxOTZlMGNlMThlYmZhOThlNTE5ODExZiJ9.yfETEede6nS6WiEMHEtvtD1QSS9nCD8eO0Ua1NQ9i8A&download=image.png"></p>
+<p>5，<strong>利用SUM(IF()) 生成列，直接生成结果不再利用子查询</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">SELECT IFNULL(userid,&#x27;TOTAL&#x27;) AS userid,</span><br><span class="line">SUM(IF(`subject`=&#x27;语文&#x27;,score,0)) AS 语文,</span><br><span class="line">SUM(IF(`subject`=&#x27;数学&#x27;,score,0)) AS 数学,</span><br><span class="line">SUM(IF(`subject`=&#x27;英语&#x27;,score,0)) AS 英语,</span><br><span class="line">SUM(IF(`subject`=&#x27;政治&#x27;,score,0)) AS 政治,</span><br><span class="line">SUM(score) AS TOTAL </span><br><span class="line">FROM tb_score</span><br><span class="line">GROUP BY userid WITH ROLLUP;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tcs-devops.aliyuncs.com/storage/11231b746fa7344e3efd8d0dd4eeb90ab129?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9hcHBJZCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYxNjc0NjM3MCwiaWF0IjoxNjE2MTQxNTcwLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMjMxYjc0NmZhNzM0NGUzZWZkOGQwZGQ0ZWViOTBhYjEyOSJ9.i6NNDUOGiCOys8BK086gaT4yrnjmcWebBphG-ohpKlw&download=image.png"></p>
+<p><strong>6、动态，适用于列不确定情况</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">SET @EE=&#x27;&#x27;;</span><br><span class="line">select @EE :=CONCAT(@EE,&#x27;sum(if(subject= \&#x27;&#x27;,subject,&#x27;\&#x27;,score,0)) as &#x27;,subject, &#x27;,&#x27;) AS aa FROM (SELECT DISTINCT subject FROM tb_score) A ;</span><br><span class="line"></span><br><span class="line">SET @QQ = CONCAT(&#x27;select ifnull(userid,\&#x27;TOTAL\&#x27;)as userid,&#x27;,@EE,&#x27; sum(score) as TOTAL from tb_score group by userid WITH ROLLUP&#x27;);</span><br><span class="line">-- SELECT @QQ;</span><br><span class="line"></span><br><span class="line">PREPARE stmt FROM @QQ;</span><br><span class="line">EXECUTE stmt;</span><br><span class="line">DEALLOCATE PREPARE stmt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tcs-devops.aliyuncs.com/storage/1123e6391022674d24052bbda2157274176b?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9hcHBJZCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYxNjc0NjM3MCwiaWF0IjoxNjE2MTQxNTcwLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMjNlNjM5MTAyMjY3NGQyNDA1MmJiZGEyMTU3Mjc0MTc2YiJ9.TXUsBH6ly7Vc0YfY6fl7zgnKNASA9qUIMdP3K6mKydQ&download=image.png"></p>
+<p><img src="https://tcs-devops.aliyuncs.com/storage/112342faca1f35441810990a39a4566f0dfd?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9hcHBJZCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYxNjc0NjM3MCwiaWF0IjoxNjE2MTQxNTcwLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMjM0MmZhY2ExZjM1NDQxODEwOTkwYTM5YTQ1NjZmMGRmZCJ9.a2w2i8wwxEPM_v3BlidQDhvoWGd0FK6iaR-P_GR2N-o&download=image.png"></p>
+<p><strong>7、合并字段显示：利用group_concat()</strong></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELECT userid,GROUP_CONCAT(`subject`,&quot;:&quot;,score)AS 成绩 FROM tb_score</span><br><span class="line">GROUP BY userid</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tcs-devops.aliyuncs.com/storage/1123597734c2dd241e2b8d576991e19d7b5b?Signature=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBcHBJRCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9hcHBJZCI6IjVlNzQ4MmQ2MjE1MjJiZDVjN2Y5YjMzNSIsIl9vcmdhbml6YXRpb25JZCI6IiIsImV4cCI6MTYxNjc0NjM3MCwiaWF0IjoxNjE2MTQxNTcwLCJyZXNvdXJjZSI6Ii9zdG9yYWdlLzExMjM1OTc3MzRjMmRkMjQxZTJiOGQ1NzY5OTFlMTlkN2I1YiJ9.dGq4OYqd_ZGoAR-Q8cw6sNwQrr2vu0gHg7-9kniNB7k&download=image.png"></p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">group_concat()，手册上说明:该函数返回带有来自一个组的连接的非NULL值的字符串结果。</span><br><span class="line">比较抽象，难以理解。通俗点理解，其实是这样的：group_concat()会计算哪些行属于同一组，</span><br><span class="line">将属于同一组的列显示出来。要返回哪些列，由函数参数(就是字段名)决定。分组必须有个标准，</span><br><span class="line">就是根据group by指定的列进行分组。</span><br><span class="line">结论：group_concat()函数可以很好的建属于同一分组的多个行转化为一个列。</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">糊涂</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.3" zIndex="1" src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-ribbon@1/canvas-ribbon.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '.page-configurations',
+    '.main-inner',
+    '.post-toc-wrap',
+    '.languages',
+    '.pjax'
+  ],
+  analytics: false,
+  cacheBust: false,
+  scrollRestoration: false,
+  scrollTo: !CONFIG.bookmark.enable
+});
+
+document.addEventListener('pjax:success', () => {
+  pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.subMenu)
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  const hasTOC = document.querySelector('.post-toc');
+  document.querySelector('.sidebar-inner').classList.toggle('sidebar-nav-active', hasTOC);
+  document.querySelector(hasTOC ? '.sidebar-nav-toc' : '.sidebar-nav-overview').click();
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+  <script>
+    NProgress.configure({
+      showSpinner: true
+    });
+    NProgress.start();
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState === 'interactive') {
+        NProgress.inc(0.8);
+      }
+      if (document.readyState === 'complete') {
+        NProgress.done();
+      }
+    });
+    document.addEventListener('pjax:send', () => {
+      NProgress.start();
+    });
+    document.addEventListener('pjax:success', () => {
+      NProgress.done();
+    });
+  </script>
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    <div class="pjax">
+
+
+
+    </div>
+  <!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/clicklove.js"></script>
+
+</body>
+</html>
